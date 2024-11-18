@@ -1,0 +1,8 @@
+[environments.develop]
+theme = "134452412567"
+store = "np-sandbox"
+live-reload = "hot-reload"
+poll = true
+open = true
+verbose = true
+port = 9292
