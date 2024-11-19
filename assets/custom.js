@@ -1,5 +1,5 @@
-/**
- * DEVELOPER DOCUMENTATION
+ /**
+ * DEVELOPER DOCUMENTATION test
  *
  * Include your custom JavaScript here.
  *
