@@ -3,7 +3,7 @@
     branches:
       - main
 jobs:
-  deploy:
+  deploy-uk:
     runs-on: ubuntu-latest
     steps:
       - name: Copy Files to UK
@@ -18,6 +18,9 @@ jobs:
           dst_repo_name: test-uk
           exclude: '*.json'
           commit_message: "[CI] Deployment"
+  deploy-us:
+    runs-on: ubuntu-latest
+    steps:
       - name: Copy Files to US
         uses: andstor/copycat-action@v3
         with:
