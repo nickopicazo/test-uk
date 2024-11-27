@@ -11,7 +11,7 @@ jobs:
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_branch: main
-          dst_branch: main
+          dst_branch: develop
           src_path: /.
           dst_path: /.
           dst_owner: nickopicazo
@@ -26,7 +26,7 @@ jobs:
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           src_branch: main
-          dst_branch: main
+          dst_branch: develop
           src_path: /.
           dst_path: /.
           dst_owner: nickopicazo
