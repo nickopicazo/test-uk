@@ -6,7 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Copy Files
+      - name: Copy Files to UK
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
@@ -16,5 +16,17 @@ jobs:
           dst_path: /.
           dst_owner: nickopicazo
           dst_repo_name: test-uk
+          exclude: '*.json'
+          commit_message: "[CI] Deployment"
+      - name: Copy Files to US
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.API_TOKEN_GITHUB }}
+          src_branch: main
+          dst_branch: main
+          src_path: /.
+          dst_path: /.
+          dst_owner: nickopicazo
+          dst_repo_name: test-us
           exclude: '*.json'
           commit_message: "[CI] Deployment"
