@@ -16,5 +16,5 @@ jobs:
           dst_path: /.
           dst_owner: nickopicazo
           dst_repo_name: test-uk
-          exclude: '*.{json,toml}'
+          exclude: '*.json'
           commit_message: "[CI] Deployment"
